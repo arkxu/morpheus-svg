@@ -86,6 +86,7 @@ easings['sine-in-out']=function (t) {
 /*
  * Helper functions
  */
+global.window = global.window || {}; global.window.innerWidth = 1024;
 
 var _reqAnimFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.oRequestAnimationFrame;
 var _cancelAnimFrame = window.cancelAnimationFrame || window.mozCancelAnimationFrame || window.webkitCancelAnimationFrame || window.oCancelAnimationFrame;
